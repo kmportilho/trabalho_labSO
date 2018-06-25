@@ -1,0 +1,37 @@
+Aluna: Karolyne Pontes Marchon Portilho     Matrícula:0050013539
+LabSO
+
+
+
+
+Questão 1
+
+#!/bin/bash
+
+#configura nome e email
+
+git config --global user.name "kmportilho"
+git config --globa user.email "k.maarchon@gmail.com"
+
+git add *
+git commit -m "$1"
+git push
+
+
+__________________________________________________________________________________
+
+Questão 2
+#!/bin/bash
+cont=0
+
+for j in $(ls ~)
+
+do
+
+  echo "$j"
+
+  let cont=$cont+1
+
+done
+
+ echo "Numero de arquivos e pastas é:" "$cont"
